@@ -1,20 +1,28 @@
 .body{
     background-color: rgb(36, 34, 34);
+    padding-left: 10px;
+    font-family: Salsa;
 }
 
 .title{
     font-size: 30px;
     font-weight: 500;
     color: white;
+    
 }
 .rock , .paper , .scissors ,.reset{
     height: 90px;
     width: 90px;
     border-radius: 90px;
     border: none;
-    margin-right: 10px;
+    margin-right: 15px;
     position: relative;
+    transition: scale 0.15s;
 
+}
+
+.rock :hover,.paper:hover,.scissors:hover ,.reset:hover{
+    scale:1.1; 
 }
 .rock-image , .paper-image , .scissors-image ,.reset-image{
     position: absolute;
@@ -25,9 +33,20 @@
     width: 90px;
     border-radius: 50px;
     margin-right: 20px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
 }
 
 .results ,.moves ,.score{
     color: white;
+    font-size: 20px;
+    
+}
+.marquee{
+    color: white;
+    font-size: 19px;
+    margin-top: 10px;
+   
 }
 
